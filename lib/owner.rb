@@ -77,20 +77,8 @@ class Owner
   end 
   
   def list_pets
-    puts "I have #{} "
+    puts "I have #{Dog.all.count} dogs, and #{Cat.all.count} cats."
   end 
-  
-  describe "#list_pets" do
-      it 'can list off its pets' do
-        @owner.buy_cat("Crookshanks")
-        @owner.buy_cat("Fido")
-        @owner.buy_dog("Snuffles")
-        @owner.buy_dog("Charley")
-        expect(@owner.list_pets).to eq("I have #{@owner.dogs.count} dog(s), and #{@owner.cats.count} cat(s).")
-      end
-    end
-  
-  
 
   
 end
