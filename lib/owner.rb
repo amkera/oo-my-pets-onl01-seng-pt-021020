@@ -1,8 +1,5 @@
 class Owner
   attr_reader :name, :species #owner's name and species cannot be changed 
-  
-
-  
   @@all = [] #all owners 
   
   
@@ -77,7 +74,7 @@ class Owner
   end 
   
   def list_pets
-    return "I have #{Dog.owner.count} dogs, and #{Cat.owner.count} cats."
+    return "I have #{} dogs, and #{} cats."
   end 
 
   
